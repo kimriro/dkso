@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("p").hide();
+  });
+  $("#show").click(function(){
+    $("p").show();
+  });
+});
+/*
+    $(document).ready(function(){
+    $("#btn2").click(function(){
+      var hello = "";
+      for (i=1; i<=10;  i++){
+         hello = hello +i + ". <b>hello world!</b><br>" 
+      }
+    $("#test2").html(hello);
+ });
+});
+*/
+ $(document).ready(function(){
+    $("#btn2").click(function(){
+      var hello = "";
+    
+      for (i=1; i<=10;  i++){
+         hello += "<img src='img/" +i + ".jpg' width='300'><br>" 
+      }
+    $("#test2").html(hello);
+ 
+        });
+});
+</script>
+</head>
+<body>
+<!--
+<p>일해라 노예야.</p>
+<button id="hide"> 숨길거야</button>
+<button id="show">보여줄거야</button>
+-->
+    
+
+<p id="test2"> 라면 모습 10개 출력</p>
+<button id="btn2">출력 시작</button>
+
+
+</body>
+</html>
